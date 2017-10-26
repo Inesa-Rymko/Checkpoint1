@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Candy.cs" />
+    <Compile Include="Classes\Coockie.cs" />
+    <Compile Include="Classes\Marshmallow.cs" />
     <Compile Include="Classes\Sweet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
