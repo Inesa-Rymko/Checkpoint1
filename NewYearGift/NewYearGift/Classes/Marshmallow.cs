@@ -20,5 +20,6 @@ namespace NewYearGift.Classes
         {
             Console.WriteLine(taste.ToString());
         }
+     
     }
 }

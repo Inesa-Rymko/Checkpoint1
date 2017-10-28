@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace NewYearGift
 {
-    public static class Class1
+    public static class Extension
     {
         public static void ShowItems(this IGift gift)
         {
@@ -18,10 +18,11 @@ namespace NewYearGift
             foreach (var i in gift.Items)
             {
                 Console.WriteLine("Название конфеты: {0}, Вес конфеты: {1}, Сахар: {2}, Кол-во: {3}"
-                    , i.name, i.weight, i.sugar, i.pieceCount);
+                    , i.Name, i.Weight, i.Sugar, i.PieceCount);
 
             }
         }
+    }
         class Program
         {
 
@@ -59,9 +60,9 @@ namespace NewYearGift
 
                 Console.WriteLine();
                 Console.WriteLine("сортировка по сахару");
-                foreach (var items in gift.FindCandyBySugar(20, 110))
+                foreach (var items in gift.FindCandyBySugar(70, 110))
                 {
-                    Console.WriteLine("{0}, Сахар: {1}", items.name, items.sugar);
+                    Console.WriteLine("{0}, Сахар: {1}", items.Name, items.Sugar);
                 }
 
 
@@ -70,8 +71,7 @@ namespace NewYearGift
                 Console.WriteLine("Вес подарка: {0}", gift.GiftWeight());
                 Console.ReadKey();
 
-
-            }
+            
         }
     }
 }
