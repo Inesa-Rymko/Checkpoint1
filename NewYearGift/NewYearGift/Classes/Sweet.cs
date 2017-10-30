@@ -23,6 +23,7 @@ namespace NewYearGift.Classes
         }
 
         public abstract void TypeSweet();
+       
     }
 }
 

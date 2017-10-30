@@ -14,11 +14,13 @@ namespace NewYearGift.FactoryMethod
         {
             return new Marshmallow(marshmallowName, marshmallowWeight, marshmallowSugar, marshmallowCount, taste);
         }
-        public override Sweet FactoryMethod(string candyName, double candyWeight, double candySugar, int candyCount, TypeCoockie Coockie)
+
+        public override Sweet FactoryMethod(string candyName, double candyWeight, double candySugar, int candyCount, TypeCandy type)
         {
             throw new NotImplementedException();
         }
-        public override Sweet FactoryMethod(string candyName, double candyWeight, double candySugar, int candiCount, TypeCandy type)
+
+        public override Sweet FactoryMethod(string coockieName, double cookieWeight, double cookieSugar, int cookieCount, TypeCoockie Coockie)
         {
             throw new NotImplementedException();
         }

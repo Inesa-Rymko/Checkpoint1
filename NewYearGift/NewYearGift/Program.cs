@@ -58,6 +58,12 @@ namespace NewYearGift
                 gift.Sort();
                 gift.ShowItems();
 
+            Console.WriteLine();
+            Console.WriteLine("вкусность конфетки");
+
+            Marshmallow marshmallowsweet = new Marshmallow("Marshmallow", 230, 76.6f, 1, TasteMarshmallow.Orange);
+            marshmallowsweet.TypeSweet();
+
                 Console.WriteLine();
                 Console.WriteLine("сортировка по сахару");
                 foreach (var items in gift.FindCandyBySugar(70, 110))
@@ -70,7 +76,7 @@ namespace NewYearGift
                 Console.WriteLine();
                 Console.WriteLine("Вес подарка: {0}", gift.GiftWeight());
                 Console.ReadKey();
-
+        
             
         }
     }
